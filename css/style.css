@@ -1,0 +1,65 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+/* REUSABLE PIECES */
+
+:root{
+    --primary-color: #EBD96B;
+    --grey-color: #F4F6F5;
+    --black-color: #000;
+    --white-color: #FFF;
+}
+
+/* HERO SECTION */
+
+.hero-section{
+    height: 100vh;
+    width: 100%;
+    color: var(--white-color);
+    padding: 60px 100px;
+}
+
+.hero-card{
+    height: 80.5vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--grey-color);
+    border-radius: 59px;
+}
+
+.hero-text{
+    margin-top: 50px;
+    margin-left: 60px;
+    font-size: 96px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+
+.hero-span{
+    color: var(--primary-color);
+}
+
+.hero-img{
+    height: 80vh;
+    width: 40vw;
+}
+
+/* PARTNERS SECTION */
+
+.partners-section{
+    height: 150px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 0 100px;
+    background-color: var(--primary-color);
+    align-items: center;
+}
