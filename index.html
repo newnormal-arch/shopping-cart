@@ -10,7 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <!-- BOOTSTRAP STYLESHEET -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- FONT AWESOME -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+
     <title>Shopping Cart</title>
 </head>
 
@@ -35,7 +40,53 @@
             <img src="./images/levi-logo.png" alt="Levi's Logo">
             <img src="./images/amazon-logo.png" alt="Amazon Logo">
         </section>
-        <section class="clothing-section" id="clothing"></section>
+        <!-- PRODUCTS SECTION -->
+        <section class="products-section" id="products">
+            <h2 class="section-title">
+                New Arrivals
+            </h2>
+            <div class="shopping-products">
+                <div class="shopping-items">
+                    <img class="product-img" src="./images/hoodie-img.png" alt="Picture of a hoodie for sale">
+                    <h3 class="product-title">Orange Hoodie</h3>
+                    <p class="product-description"></p>
+                    <div class="price-counter">
+                        <h5 class="product-price">R <span class="price">599.99</span></h5>
+                        <div class="product-quantity">
+                           <button id="decrease-quantity" class="decrease-btn"><i class="fas fa-minus"></i></button>
+                           <input id="quantity" type="number" min="0" class="quantity-value form-control text-center" value="0">
+                           <button id="increase-quantity" class="increase-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-items">
+                    <img class="product-img" src="./images/jacket-img.png" alt="Picture of a jacket for sale">
+                    <h3 class="product-title">Leather Jacket</h3>
+                    <p class="product-description"></p>
+                    <div class="price-counter">
+                        <h5 class="product-price">R <span class="price">599.99</span></h5>
+                        <div class="product-quantity">
+                           <button id="decrease-quantity" class="decrease-btn"><i class="fas fa-minus"></i></button>
+                           <input id="quantity" type="number" min="0" class="quantity-value  form-control text-center" value="0">
+                           <button id="increase-quantity" class="increase-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="shopping-items">
+                    <img class="product-img" src="./images/t-shirt-img.png" alt="Picture of a t-shirt for sale">
+                    <h3 class="product-title">White T-shirt</h3>
+                    <p class="product-description"></p>
+                    <div class="price-counter">
+                        <h5 class="product-price">R <span class="price">599.99</span></h5>
+                        <div class="product-quantity">
+                           <button id="decrease-quantity" class="decrease-btn"><i class="fas fa-minus"></i></button>
+                           <input id="quantity" type="number" min="0" class="quantity-value form-control text-center" value="0">
+                           <button id="increase-quantity" class="increase-btn"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="app-download-section" id="app-download"></section>
         <section class="newsletter-section" id="newsletter"></section>
     </main>
